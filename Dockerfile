@@ -1,12 +1,11 @@
 # MIT License
 # Copyright (c) 2017 Nicola Worthington <nicolaw@tfb.net>
 
-FROM node:9.5.0-alpine
-LABEL author="Nicola Worthington <nicolaw@tfb.net>"
+FROM node:10-alpine
 
 VOLUME /var/lib/tiddlywiki
 WORKDIR /var/lib/tiddlywiki
-RUN npm install -g tiddlywiki
+RUN npm install -g tiddlywiki@5.1.18
 
 EXPOSE 8080
 
