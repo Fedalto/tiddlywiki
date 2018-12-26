@@ -5,7 +5,7 @@ FROM node:10-alpine
 
 VOLUME /var/lib/tiddlywiki
 WORKDIR /var/lib/tiddlywiki
-RUN npm install -g tiddlywiki@5.1.18
+RUN npm install -g tiddlywiki@5.1.19
 
 EXPOSE 8080
 
